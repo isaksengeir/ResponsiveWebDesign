@@ -1,4 +1,4 @@
-<style>
+
   .heart {
     position: absolute;
     margin: auto;
@@ -31,5 +31,3 @@
     top: -25px;
     left: 0px;
   }
-</style>
-<div class="heart"></div>
