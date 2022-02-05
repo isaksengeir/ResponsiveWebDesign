@@ -1,0 +1,88 @@
+body {
+  font-family: system-ui;
+  background: #000000;
+}
+
+#title {
+  font-size: 68px;
+  margin-bottom: 3%;
+}
+
+#image {
+  width: 100%;
+  margin-top:4%;
+  /*border-radius: 25px;*/
+  border: 1px solid blue;
+  box-shadow: 0 0 40px 3px black;
+}
+
+
+.main {
+  background-color: #121212;;
+  color: white;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:2.5%;
+  margin-top: 2.5%;
+  padding-left:5%;
+  padding-right:5%;
+  padding-bottom: 1%;
+  text-align: center;
+
+  /*border-radius: 20px;*/
+  border: 1px solid;
+  /*filter: drop-shadow(0px 00px 20px white);*/
+  box-shadow: 0 0 40px 3px;
+  max-width: 800px; /* this should probably be put somewhere else
+  if the goal is to make the page similar */
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+#image-div {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#blue {
+  color: blue;
+}
+
+#green {
+  color: green;
+}
+
+#black_blue {
+  margin-top:4%;
+  color: black;
+  background-color: blue;
+  box-shadow: 0 0 40px 3px blue;
+  margin-left:0%;
+  margin-right:0%;
+}
+
+#ul_left {
+  text-align: left;
+}
+
+ul {
+  display:inline-block;
+  text-align: left;
+}
+
+#strong_font {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#quote {
+  font-style:oblique;
+  text-align: left;
+}
