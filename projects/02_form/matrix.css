@@ -1,0 +1,117 @@
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Orbitron&family=Ubuntu+Mono&display=swap');
+
+body {
+  margin: auto;
+  background-color: #000;
+}
+
+.container {
+  width: 100%;
+  color: chartreuse;
+  margin: auto;
+  position: relative;
+  max-width: 700px;
+  width: auto;
+  z-index: 1;
+}
+
+.formarea {
+  background-color: rgba(10, 20, 10, 0.70);
+  margin: 0% 2.5% 2.5% 2.5%;
+  padding: 20px;
+}
+
+#survey-form {
+  width: 100%;
+  /*margin: auto;*/
+  }
+
+.entry {
+  margin-bottom: 30px;
+  
+}
+
+
+input, textarea {
+    /*box-sizing:border-box;*/
+    background-color: rgba(10, 10, 10, 0.80);
+    color: chartreuse;
+  font-size: 18px;
+  font-family: 'Ubuntu mono', monospace;
+  margin-top: 10px;
+  height: 20px;
+  padding: 5px 0px 5px 5px;
+  border-color: black;
+  }
+
+select {
+  background-color: rgba(10, 10, 10, 0.80);
+    color: chartreuse;
+  border-color: black;
+  font-size: 18px;
+
+  width: 100%;
+}
+
+button {
+      background-color: rgba(10, 10, 10, 0.80);
+    color: chartreuse;
+  border-color: black;
+  font-size: 18px;
+  width: 100%;
+}
+
+.field_set {
+  border-color: black;
+  background-color: rgba(10, 10, 10, 0.80);
+}
+
+input[type=text]{
+  width: 98.5%;
+}
+input[type=email]{
+  width: 98.5%;
+}
+
+textarea {
+  width: 98.5%;
+  height: 100px;
+}
+
+textarea::placeholder {
+  color: rgba(0, 255, 0, 0.10);
+}
+
+input::placeholder {
+  color: rgba(0, 255, 0, 0.10);
+}
+
+#canv {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#title {
+  font-family: 'Ubuntu mono', monospace;
+  text-align: center;
+  font-size: 48px;
+}
+
+#description {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+
+      
+#retro {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+#retro2 {
+  /*font-family: 'Changa', sans-serif;*/
+  font-family: 'Orbitron', sans-serif;
+}

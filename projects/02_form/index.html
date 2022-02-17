@@ -1,12 +1,172 @@
+
 <!doctype html>
-<html>
+<!--[if lte IE 9]>
+<html lang="en" class="oldie">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+
 <head>
-<meta charset="UTF-8">
-<title>This will be one amazing form!</title>
-</head>
-
-<body>
-
+  <meta charset="UTF-8">
+    <title>Matrix survey form</title>
+	<link rel="stylesheet" type="text/css" href="./matrix.css">
 	
-</body>
-</html>
+	 <script  src="./matrix.js" async></script>
+  </head>
+
+  <body>
+  
+	
+<canvas id="canv"></canvas>
+
+<div class="container">
+  
+  <header>
+  <h1 id="title"> The Matrix got you! </h1>
+  
+  <p id="description">So, which one will it be? The <span style="color:red; font-weight:bold; font-size: 26px;">red</span> or the <span style="color:blue; font-weight:bold; font-size: 26px;">blue</span> pill?</p>
+  
+  </header>
+
+  <main>
+    <div id="retro2" class="formarea">
+      
+    <form id="survey-form">
+      
+      <div id="input_name" class="entry">
+      <label id="name-label" for="name">Name</label><br>
+      <input 
+             type="text" 
+             id="name" 
+             name="name" 
+             placeholder="Mr. Anderson"
+             required 
+             />
+      </div>
+      
+      <div id="input_email" class="entry">
+      <label id="email-label" for="email">Email</label><br>
+      <input 
+             type="email" 
+             id="email" 
+             name="email" 
+
+             placeholder="root@matrix.com"
+             required
+             />
+      </div>
+      
+      <div id="input_age" class="entry">
+           <label id="number-label" for="number">Age (optional)</label><br>
+      <input 
+             type="number" 
+             id="number" 
+             name="number" 
+             pattern="@" 
+             placeholder="01" 
+             min="0" 
+             max="9999">
+           </div>
+      
+      <div id="input_pill" class="entry">
+        <label id="dropdown-label" for="dropdown">I will take ...</label><br>
+        <select id="dropdown" name="pill"  size="1" >
+          <option value="none">no pill at all!</option>
+          <option value="blue">the BLUE pill</option>
+          <option value="red">the RED pill</option>    
+        </select>
+      </div>
+      
+      <div class="entry">
+      <fieldset id="group1" class="field_set">
+        <legend> How confident are you about your choice?</legend>
+  
+        <label>
+          <input 
+               id="radio_1" 
+               type="radio" 
+               value="value1"
+               name="group1"
+                 checked
+                 /> Very </label> 
+        
+        <label>
+          <input 
+                 type="radio"
+                 value="value2"
+                 name="group1" 
+                 /> Not sure</label> 
+        <label>
+          <input 
+                 type="radio" 
+                 value="value3" 
+                 name="group1" 
+                 /> What have I done?</label>
+      </fieldset>
+        </div>
+    
+      <div id="checkboxes" class="entry">
+        <label>What color(s) do you like?</label><br>
+        
+        <label>
+          <input 
+                 type="checkbox" 
+                 id="red_check" 
+                 name="red_check"/> RED</label><br>
+        <label>
+          <input 
+                 type="checkbox" 
+                 id="green_check" 
+                 name="green_check"/> GREEN </label> <br>
+        <label>
+          <input 
+                 type="checkbox" 
+                 id="blue_check" 
+                 name="blue_check"/> BLUE</label><br>
+      <label>
+          <input 
+                 type="checkbox" 
+                 id="colorblind_check" 
+                 name="colorblindCheck"
+				 />
+		  I am color blind</label>
+      </div>
+      
+      <div id="comments_container" class="entry">
+        <label> Any last comments?</label><br>
+        <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+      </div>
+    
+     <div id="submit_container" class="entry">
+        <button type="submit" id="submit">
+        Submit
+      </button>
+       <br>
+      </div>
+      
+    </form>
+    
+   </div>
+
+  </main>
+
+</div>
+	 
+	
+  </body>
+  </html>
+
+
+ 
+
+
+
+
+  
+
